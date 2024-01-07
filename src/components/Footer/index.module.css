@@ -1,0 +1,50 @@
+.footer {
+  color: var(--text-color-light);
+  line-height: var(--spacer);
+  padding: var(--spacer);
+  padding-top: calc(var(--spacer) * 2);
+  text-align: center;
+}
+
+@media (min-width: 40rem) and (min-height: 500px) {
+  .footer {
+    position: fixed;
+    width: 100%;
+    border: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+
+.copyright {
+  margin-top: calc(var(--spacer) / var(--line-height));
+  color: var(--text-color-light);
+  font-size: var(--font-size-mini);
+}
+
+.copyright p {
+  margin-bottom: 0;
+}
+
+.copyright a {
+  margin-left: var(--spacer);
+  color: var(--text-color-light);
+}
+
+.copyright a:hover {
+  color: var(--link-color);
+}
+
+.copyright a:first-child {
+  margin-left: 0;
+}
+
+.copyright svg {
+  display: inline-block;
+  width: var(--font-size-small);
+  height: var(--font-size-small);
+  margin-right: calc(var(--spacer) / 8);
+  margin-bottom: -0.15rem;
+  stroke: var(--text-color-light);
+  opacity: 0.7;
+}

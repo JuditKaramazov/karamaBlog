@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets'
+import Networks from './Networks.astro'
+import Location from '../Location'
+import karamaBrand from '@images/karamaBrand.png'
+import config from '@config/blog.config'
+import styles from './Vcard.module.css'
+
+const { author, rss } = config
+const { mastodon, github, name, url } = author
+const links = [mastodon, github, rss]
+---
+
+<Image
+  class={styles.avatar}
+  src={karamaBrand}
+  width="165"
+  height="165"
+  alt="karamaBrand original logo."
+/>
+
+<p class={styles.description}>
+  {config.siteDescription.replace(name, '')}<br />
+  <a class="fn" rel="author" href={url}>
+    {name}
+  </a>
+</p>
+
+<Location client:visible />
+
+<Networks links={links} />

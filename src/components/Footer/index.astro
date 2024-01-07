@@ -1,0 +1,21 @@
+---
+import Vcard from './Vcard.astro'
+import styles from './index.module.css'
+import config from '@config/blog.config'
+
+const year = new Date().getFullYear()
+const { name, url } = config.author
+---
+
+<footer role="contentinfo" class={styles.footer} id="footer">
+  <Vcard />
+  <section class={styles.copyright}>
+    <p>
+      &copy; 1994 &ndash;
+      {year + ' '}
+      <a href={url} rel="me">
+        {name}
+      </a>
+    </p>
+  </section>
+</footer>

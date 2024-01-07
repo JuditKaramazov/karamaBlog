@@ -1,0 +1,26 @@
+---
+import styles from './Networks.module.css'
+import { Rss, Mastodon, Github } from '@images/components'
+
+type Props = {
+  links: string[]
+}
+
+const { links } = Astro.props
+---
+
+<section class={styles.networks}>
+  {
+    links.map((link: string) => (
+      <a class={styles.link} href={link} title={link} rel="me">
+        {link.includes('mastodon') ? (
+          <Mastodon />
+        ) : link.includes('github') ? (
+          <Github />
+        ) : link.includes('feed.xml') ? (
+          <Rss />
+        ) : null}
+      </a>
+    ))
+  }
+</section>

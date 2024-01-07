@@ -1,0 +1,29 @@
+.networks {
+  margin-top: calc(var(--spacer) / 2);
+}
+
+.link {
+  display: inline-block;
+  width: 2rem;
+  margin-left: calc(var(--spacer) / 4);
+  margin-right: calc(var(--spacer) / 4);
+  color: var(--text-color-light);
+  padding: calc(var(--spacer) / 4);
+  text-align: center;
+}
+
+.link:first-child {
+  margin-left: 0;
+}
+
+.link:last-child {
+  margin-right: 0;
+}
+
+.link svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  transition: stroke 0.3s ease-in-out;
+}

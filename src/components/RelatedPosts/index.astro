@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import Fuse from 'fuse.js'
+import styles from './index.module.css'
+import PhotoTeaser from '@components/PhotoTeaser.astro'
+import PostTeaser from '@components/PostTeaser/index.astro'
+import { getAllPostsForSearch } from '@lib/astro'
+
+type Props = {
+  post: CollectionEntry<'articles' | 'photos' | 'links'>
+  isPhotos?: boolean
+}
+const { post, isPhotos } = Astro.props as Props
+const allPosts = await getAllPostsForSearch()
+const allPostsWithoutCurrent = allPosts?.filter(
+  (post) => post.slug !== Astro.props.post.slug
+) as CollectionEntry<'articles' | 'photos' | 'links'>[]
+
+// Configures fuse.js.
+// https://fusejs.io/api/options.html
+const fuse = new Fuse(allPostsWithoutCurrent, {
+  keys: ['data.tags', 'data.title', 'data.lead'],
+  useExtendedSearch: true,
+  threshold: 0.6
+})
+const relatedPosts = fuse
+  // https://www.fusejs.io/examples.html#extended-search
+  .search(
+    `${post?.data?.tags?.join(' | ')} | "${post?.data?.lead}" | "${
+      post?.data?.title
+    }"`
+  )
+  .map((result) => result.item)
+  .slice(0, 6)
+---
+
+<section class={`${styles.relatedPosts} ${isPhotos ? styles.photos : ''}`}>
+  <h1 class={styles.title}>Related</h1>
+  <ul>
+    {
+      relatedPosts?.map((post) => (
+        <li>
+          {post.collection === 'photos' ? (
+            <PhotoTeaser post={post as CollectionEntry<'photos'>} />
+          ) : (
+            <PostTeaser
+              post={post as CollectionEntry<'articles' | 'links'>}
+              hideDate
+            />
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</section>

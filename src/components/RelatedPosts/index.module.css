@@ -1,0 +1,45 @@
+.title {
+  margin-bottom: var(--spacer);
+  color: var(--text-color-light);
+  font-size: var(--font-size-h3);
+  text-decoration: none;
+}
+
+.relatedPosts ul {
+  display: grid;
+  margin: 0;
+  gap: calc(var(--spacer) / 2);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+}
+
+@media (min-width: 40rem) {
+  .relatedPosts ul {
+    gap: var(--spacer);
+  }
+
+  .relatedPosts.photos ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.relatedPosts li {
+  display: block;
+  margin: 0;
+}
+
+.relatedPosts li::before {
+  display: none;
+}
+
+.relatedPosts a {
+  text-decoration: none;
+}
+
+.relatedPosts a > div {
+  margin-bottom: 0;
+}
+
+.relatedPosts a h1 {
+  font-size: var(--font-size-h5);
+}

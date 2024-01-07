@@ -1,0 +1,99 @@
+---
+import LayoutBase from '@layouts/Base/index.astro'
+
+const title = `I'm sorry, Dave`
+const description = `I'm afraid I can't do that`
+---
+
+<style>
+  .wrapper {
+    min-height: 50vh;
+    margin-bottom: calc(var(--spacer) * 4);
+    text-align: center;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: calc(var(--spacer) / 4);
+    font-size: var(--font-size-h3);
+  }
+
+  .text {
+    color: var(--brand-grey-light);
+    font-size: var(--font-size-base);
+  }
+
+  :root {
+    --hal-size: 72px;
+  }
+
+  .hal9000 {
+    position: relative;
+    width: var(--hal-size);
+    height: var(--hal-size);
+    margin: var(--spacer) auto;
+    background: #444;
+    border: 4px solid #ccc;
+    border-radius: var(--hal-size);
+    box-shadow: inset 0 0 10px #000;
+    padding: 1.5em;
+  }
+
+  .hal9000::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: red;
+    border-radius: 100%;
+    box-shadow:
+      0 0 5px red,
+      0 0 10px red,
+      0 0 15px red,
+      0 0 20px red,
+      0 0 25px red,
+      0 0 30px red,
+      0 0 40px red;
+    animation: halpulse 7s infinite;
+  }
+
+  .hal9000::after {
+    content: '';
+    position: absolute;
+    width: var(--hal-size);
+    height: var(--hal-size);
+    top: 0;
+    left: 0;
+    border-radius: var(--hal-size);
+    background-image: linear-gradient(
+      135deg,
+      rgba(255 255 255 / 7%) 0%,
+      rgba(255 255 255 / 7%) 40%,
+      rgba(255 255 255 / 0%) 41%
+    );
+  }
+
+  @keyframes halpulse {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.6;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+
+<LayoutBase title={title}>
+  <div class="wrapper">
+    <div class="hal9000"></div>
+
+    <h1 class="title">{title}</h1>{' '}
+    <p class="text">{description}</p>
+    <a href={'/'}>Back to homepage</a>
+  </div>
+</LayoutBase>

@@ -1,0 +1,57 @@
+.frame {
+  border: var(--border-width) solid rgba(255 255 255 / 20%);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}
+
+a:hover .frame,
+a:focus .frame {
+  border-color: var(--link-color);
+}
+
+.image {
+  composes: frame;
+  display: block;
+  max-width: none;
+  position: relative;
+}
+
+.objectFit img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  position: absolute;
+  margin: 0;
+  inset: 0;
+  object-fit: cover;
+  padding: 0;
+  transform: translateZ(0);
+}
+
+.imageTitle {
+  text-align: left;
+  position: absolute;
+  margin: 0;
+  top: 10%;
+  color: #fff !important;
+  background: var(--link-color);
+  left: 0;
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-h3);
+  font-style: normal;
+  font-weight: var(--font-weight-headings);
+  line-height: var(--line-height-headings);
+  opacity: 0;
+  padding: calc(var(--spacer) / 3) var(--spacer);
+  text-shadow: 0 1px 0 #000;
+  transform: translate3d(0, -20px, 0);
+  transition: 0.2s var(--easing);
+}
+
+a:hover .imageTitle,
+a:focus .imageTitle {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

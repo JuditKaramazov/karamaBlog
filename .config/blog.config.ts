@@ -6,6 +6,7 @@ export default {
     name: 'Judit Lázaro',
     email: 'j.lazaromoyano7@gmail.com',
     url: 'https://karamazfolio.xyz',
+    blog: 'https://karamablog.xyz',
     coffee: 'https://buymeacoffee.com/JuditKaramazov',
     github: 'https://github.com/JuditKaramazov',
     mastodon: 'https://mastodon.social/@JuditKaramazov'

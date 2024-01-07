@@ -7,17 +7,19 @@ import config from '@config/blog.config'
 import styles from './Vcard.module.css'
 
 const { author, rss } = config
-const { mastodon, github, name, url } = author
+const { mastodon, github, name, blog, url } = author
 const links = [mastodon, github, rss]
 ---
 
-<Image
-  class={styles.avatar}
-  src={karamaBrand}
-  width="165"
-  height="165"
-  alt="karamaBrand original logo."
-/>
+<a class="fn" rel="author" href={blog}>
+  <Image
+    class={styles.avatar}
+    src={karamaBrand}
+    width="165"
+    height="165"
+    alt="karamaBrand original logo."
+  />
+</a>
 
 <p class={styles.description}>
   {config.siteDescription.replace(name, '')}<br />

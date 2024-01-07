@@ -1,0 +1,24 @@
+---
+import Menu from '@components/Menu/index.astro'
+import Search from '@features/Search/index.astro'
+import ThemeSwitch from '@components/ThemeSwitch/index.astro'
+import styles from './index.module.css'
+---
+
+<header class={styles.header} aria-label="Header" id="header">
+  <div class={styles.headerContent}>
+    <a href="/" class={styles.title}>
+      <img
+        class={styles.logo}
+        src="/logo.png"
+        alt="karamaBlog original logo."
+      />
+    </a>
+
+    <nav aria-label="Menu" class={styles.nav}>
+      <ThemeSwitch />
+      <Search />
+      <Menu />
+    </nav>
+  </div>
+</header>

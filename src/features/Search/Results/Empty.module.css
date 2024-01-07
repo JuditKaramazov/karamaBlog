@@ -1,0 +1,32 @@
+.empty {
+  display: flex;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.emptyMessage {
+  color: var(--text-color-light);
+}
+
+.emptyMessageText {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.emptyMessageText::after {
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  left: 101%;
+  bottom: 0;
+  animation: ellipsis steps(4, end) 1s infinite;
+  content: '\2026';
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1rem;
+  }
+}

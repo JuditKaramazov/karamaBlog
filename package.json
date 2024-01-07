@@ -1,0 +1,118 @@
+{
+  "name": "karamablog",
+  "author": "Judit Lázaro Moyano <j.lazaromoyano7@gmail.com>",
+  "description": "Blog of { developer & tightrope walker } judit lázaro moyano",
+  "homepage": "https://karamazfolio.xyz",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npm run prebuild && astro dev --config '.config/astro.config.ts'",
+    "build": "astro build --config '.config/astro.config.ts'",
+    "preview": "astro preview",
+    "typecheck:astro": "astro check",
+    "typecheck:tsc": "tsc --noEmit --pretty",
+    "typecheck": "npm run typecheck:astro && npm run typecheck:tsc",
+    "prebuild": "run-p --silent --continue-on-error create:symlinks create:icons move:downloads",
+    "lint": "run-p --silent lint:js lint:css lint:md",
+    "lint:js": "eslint --ignore-path .gitignore './{src,test,scripts}/**/*.{ts,tsx,astro,mjs,js,cjs}'",
+    "lint:css": "stylelint --config '.config/.stylelintrc.json' 'src/**/*.css'",
+    "lint:md": "markdownlint --config '.config/.markdownlint.json' --ignore-path .gitignore --dot './**/*.{md,markdown}'",
+    "format": "prettier --ignore-path .gitignore --write '**/*.{js,jsx,ts,tsx,md,json,css,astro,yml}'",
+    "new": "ts-node --esm scripts/new/index.ts",
+    "create:icons": "ts-node --esm scripts/create-icons/index.ts",
+    "create:redirects": "ts-node --esm scripts/redirect-from.ts",
+    "create:symlinks": "./scripts/create-symlinks.sh",
+    "move:downloads": "ts-node --esm scripts/move-downloads.ts",
+    "prepare": "husky install .config/husky",
+    "lint:staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,astro}": [
+      "prettier --write",
+      "eslint"
+    ],
+    "*.css": [
+      "stylelint --config '.config/.stylelintrc.json' --fix",
+      "prettier --write"
+    ],
+    "**/*.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "markdownlint --config '.config/.markdownlint.json'",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.1",
+    "@astrojs/react": "^3.0.4",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.3",
+    "@nanostores/persistent": "^0.9.1",
+    "@nanostores/query": "^0.2.8",
+    "@nanostores/react": "^0.7.1",
+    "@radix-ui/react-select": "^2.0.0",
+    "@rainbow-me/rainbowkit": "^1.2.0",
+    "astro": "3.4.3",
+    "astro-expressive-code": "^0.26.2",
+    "astro-redirect-from": "^1.0.4",
+    "date-fns": "^2.30.0",
+    "dms2dec": "^1.1.0",
+    "fast-exif": "^2.0.1",
+    "feather-icons": "^4.29.1",
+    "fraction.js": "^4.3.7",
+    "fuse.js": "^7.0.0",
+    "motion": "^10.16.4",
+    "nanostores": "^0.9.4",
+    "pigeon-maps": "^0.21.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "slugify": "^1.6.6",
+    "swr": "^2.2.4",
+    "viem": "^1.18.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.8",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-astro": "^0.29.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-testing-library": "^6.1.0",
+    "hast-util-to-html": "^9.0.0",
+    "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jsdom": "^22.1.0",
+    "markdownlint-cli": "^0.37.0",
+    "mdast-util-to-hast": "^13.0.2",
+    "mdast-util-to-string": "^4.0.0",
+    "mdast-util-toc": "^7.0.0",
+    "node-iptc": "^1.0.5",
+    "npm-run-all": "^4.1.5",
+    "ora": "^7.0.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0",
+    "sharp-ico": "^0.1.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-css-modules": "^4.3.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-prettier": "^4.0.2",
+    "svgo": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "unist-util-visit": "^5.0.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JuditKaramazov/karamaBlog.git"
+  }
+}

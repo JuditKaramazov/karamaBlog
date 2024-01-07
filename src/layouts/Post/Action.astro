@@ -1,0 +1,58 @@
+---
+type Props = {
+  title: string
+  text: string
+  icon: any
+  url?: string
+}
+
+const { title, text, url, icon } = Astro.props
+const Icon = icon
+---
+
+<style>
+  .actionTitle {
+    margin: 0;
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+    transition: 0.2s ease-out;
+  }
+
+  .actionText {
+    margin-bottom: 0;
+    color: var(--text-color-light);
+    font-size: var(--font-size-small);
+    transition: color 0.2s ease-out;
+  }
+
+  .action {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: var(--spacer) calc(var(--spacer) / 2) var(--spacer)
+      calc(var(--spacer) * 1.5);
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .action:hover .actionTitle,
+  .action:focus .actionTitle {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+  }
+
+  .action svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(var(--spacer) / 1.05);
+    left: calc(var(--spacer) / 1.5);
+    stroke: var(--text-color-light);
+  }
+</style>
+
+<a class="action" href={url}>
+  <Icon />
+  <h1 class="actionTitle">{title}</h1>
+  <p class="actionText">{text}</p>
+</a>

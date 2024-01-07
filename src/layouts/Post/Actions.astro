@@ -1,0 +1,46 @@
+---
+import config from '@config/blog.config'
+import styles from './Actions.module.css'
+import Action from './Action.astro'
+import { Mastodon, Coffee, Github } from '@images/components'
+
+type Props = {
+  githubLink: string
+}
+
+const { githubLink } = Astro.props
+
+const actions = [
+  {
+    title: 'Something to share?',
+    text: 'Reach @JuditKaramazov out',
+    url: config.author.mastodon,
+    icon: Mastodon
+  },
+  {
+    title: 'GitHub type?',
+    text: 'Contribute to this post',
+    url: githubLink,
+    icon: Github
+  },
+  {
+    title: 'Found it useful?',
+    text: 'Fill my soul with cafelito',
+    url: config.author.coffee,
+    icon: Coffee
+  }
+]
+---
+
+<section class={styles.actions}>
+  {
+    actions.map((action) => (
+      <Action
+        title={action.title}
+        text={action.text}
+        url={action.url}
+        icon={action.icon}
+      />
+    ))
+  }
+</section>

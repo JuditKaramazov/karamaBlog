@@ -1,0 +1,29 @@
+.title {
+  margin-top: 0;
+  margin-bottom: calc(var(--spacer) / 8);
+}
+
+.titleLink {
+  margin-bottom: 0;
+  font-size: var(--font-size-h3);
+}
+
+.titleLink svg {
+  display: inline-block;
+  width: var(--font-size-base);
+  height: var(--font-size-base);
+  margin-left: 0.3rem;
+  margin-bottom: -0.1rem;
+  stroke: var(--text-color-light);
+}
+
+.linkurl {
+  width: 100%;
+  margin-bottom: calc(var(--spacer) / 2);
+  color: var(--text-color-light);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-small);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

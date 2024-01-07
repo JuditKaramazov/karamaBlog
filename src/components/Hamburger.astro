@@ -1,0 +1,79 @@
+---
+const { props } = Astro
+---
+
+<style>
+  .hamburger {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transform: rotate(0deg);
+  }
+
+  .line {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    border-bottom: var(--border-width) solid var(--text-color-light);
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.2s var(--easing);
+  }
+
+  .line:nth-child(1) {
+    top: 0;
+    transform-origin: left center;
+  }
+
+  .line:nth-child(2) {
+    top: 7px;
+    transform-origin: left center;
+  }
+
+  .line:nth-child(3) {
+    top: 14px;
+    transform-origin: left center;
+  }
+
+  /* Open menu state. */
+  :global(.has-menu-open) .line:nth-child(1) {
+    top: -1px;
+    transform: rotate(45deg);
+  }
+
+  :global(.has-menu-open) .line:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  :global(.has-menu-open) .line:nth-child(3) {
+    top: 16px;
+    transform: rotate(-45deg);
+  }
+
+  .button {
+    margin-bottom: -0.4rem;
+  }
+
+  .button:hover,
+  .button:focus {
+    outline: 0;
+  }
+
+  .button:hover .line,
+  .button:focus .line {
+    border-color: var(--link-color);
+  }
+</style>
+
+<button type="button" title="Menu" class="button" {...props}>
+  <span class="hamburger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </span>
+</button>

@@ -1,0 +1,42 @@
+---
+import { ChevronRight } from '@images/components'
+
+type Props = {
+  href: string
+}
+
+const { href } = Astro.props
+---
+
+<style>
+  .postMore {
+    display: inline-block;
+    margin-top: var(--spacer);
+    color: var(--link-color);
+    font-family: var(--font-family-headings);
+    font-size: calc(var(--font-size-base) * 0.9);
+    font-weight: var(--font-weight-headings);
+    text-transform: uppercase;
+  }
+
+  .postMore svg {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    top: 0.25rem;
+    stroke: var(--text-color-light);
+    transition: 0.2s ease-out;
+  }
+
+  .postMore:hover svg,
+  .postMore:focus svg {
+    transform: translate3d(0.2rem, 0, 0);
+  }
+</style>
+
+<a class="postMore" href={href}>
+  <slot />
+  <ChevronRight />
+</a>

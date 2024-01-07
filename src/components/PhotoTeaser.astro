@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import Picture from '@components/Picture/index.astro'
+
+type Props = { post: CollectionEntry<'photos'> }
+
+const { slug, data } = Astro.props.post
+const { title, image } = data
+---
+
+<style>
+  .photo {
+    display: block;
+  }
+</style>
+
+{
+  image ? (
+    <a class="photo" href={`/${slug}/`}>
+      <Picture
+        width={202}
+        height={202}
+        src={image}
+        alt={`Photo for ${title}`}
+        title={title}
+        objectFit
+      />
+    </a>
+  ) : null
+}

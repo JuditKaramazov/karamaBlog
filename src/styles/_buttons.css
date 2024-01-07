@@ -1,0 +1,164 @@
+.btn,
+a.btn {
+  text-align: center;
+  display: block;
+  margin: 0;
+  background-color: rgba(255 255 255 / 10%);
+  background-image: none;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-headings);
+  padding: var(--padding-base-vertical) var(--padding-base-horizontal);
+  text-transform: uppercase;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgba(255 255 255 / 15%);
+  outline: 0;
+  text-decoration: none;
+}
+
+.btn:active {
+  transition: none;
+}
+
+.btn.disabled,
+.btn[disabled],
+button:disabled,
+.btn:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn span {
+  margin-left: 0.3em;
+  color: var(--text-color-light);
+  font-size: var(--font-size-mini);
+}
+
+@media (min-width: 30rem) {
+  .btn,
+  a.btn {
+    max-width: 20rem;
+  }
+}
+
+button.link {
+  color: var(--link-color);
+}
+
+button.link:hover,
+button.link:focus {
+  outline: 0;
+}
+
+.btn-primary,
+a.btn-primary {
+  background: var(--link-color);
+  border-color: var(--link-color);
+  color: #161a1b;
+  text-shadow: 0 1px 0 rgba(255 255 255 / 30%);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+article a.btn-primary:hover,
+article a.btn-primary:focus {
+  background: var(--link-color-hover);
+  color: #161a1b;
+  text-shadow: 0 1px 0 rgba(255 255 255 / 30%);
+}
+
+.btn-primary:active {
+  background: var(--link-color);
+}
+
+.btn-block {
+  display: block;
+}
+
+.btn[class*='icon-']::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.3rem;
+  margin-bottom: -0.2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  opacity: 0.75;
+}
+
+[data-theme='dark'] .btn[class*='icon-']::before {
+  filter: invert(0.75);
+}
+
+[data-theme='dark'] .btn.btn-primary[class*='icon-']::before {
+  filter: invert(0);
+}
+
+.content-download {
+  display: block;
+  margin-top: calc(var(--spacer) * 2);
+  margin-bottom: calc(var(--spacer) * 2);
+  text-align: center;
+}
+
+@media (min-width: 30rem) {
+  .content-download {
+    display: flex;
+  }
+}
+
+.content-download .btn {
+  margin-bottom: calc(var(--spacer) / 2);
+  text-decoration: none;
+}
+
+.content-download .btn:first-child {
+  margin-left: 0;
+}
+
+.content-download .btn:only-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-download .btn span {
+  color: var(--brand-grey);
+  font-size: var(--font-size-mini);
+}
+
+@media (min-width: 30rem) {
+  .content-download .btn {
+    flex: 1;
+    margin-left: calc(var(--spacer) / 2);
+    margin-bottom: 0;
+  }
+}
+
+.icon-compass::before {
+  background-image: url('../../node_modules/feather-icons/dist/icons/compass.svg');
+}
+
+.icon-download::before {
+  background-image: url('../../node_modules/feather-icons/dist/icons/arrow-down-circle.svg');
+}
+
+.icon-github::before {
+  background-image: url('../../node_modules/feather-icons/dist/icons/github.svg');
+}

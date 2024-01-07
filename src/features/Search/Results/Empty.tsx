@@ -14,7 +14,7 @@ const SearchResultsEmpty = ({
       <p className={styles.emptyMessageText}>
         {query.length > 0 && results?.length === 0
           ? 'Oops. No results found'
-          : 'Peacefully awaiting your input, fellow wanderer'}
+          : 'Calmly awaiting your input, fellow wanderer'}
       </p>
     </header>
   </div>

@@ -1,0 +1,36 @@
+.themeSwitch {
+  position: relative;
+}
+
+.themeSwitch svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-color-light);
+}
+
+.themeSwitch:hover svg,
+.themeSwitch:focus svg {
+  stroke: var(--link-color);
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.themeSwitch [hidden] {
+  display: none !important;
+}
+
+.checkbox [type='checkbox'],
+.checkbox .label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  border: 0;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+}

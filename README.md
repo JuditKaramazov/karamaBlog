@@ -256,7 +256,7 @@ Although I am still enhancing this specific feature, feel free to check out:
 
 - [`src/components/Exif/`](src/components/Exif/)
 - `readOutExif()` as the helper for EXIF extraction in [`src/lib/exif/index.ts`](src/lib/exif/index.ts)
-- `loadAndFormatCollection()`, located in [`src/lib/astro.ts`](src/lib/astro.ts)
+- `loadAndFormatCollection()`, located in [`src/lib/astro/loadAndFormatCollection.ts`](src/lib/astro/loadAndFormatCollection.ts)
 
 ### JSON feed
 

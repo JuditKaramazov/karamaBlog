@@ -5,7 +5,7 @@ export async function getFeedContent(
   post: CollectionEntry<'articles' | 'photos' | 'links'>
 ): Promise<string> {
   const footer =
-    '<hr />This post was published on <a href="https://karamaBlog.vercel.app">karamaBlog.vercel.app</a>'
+    '<hr />This post was published on <a href="https://karamablog.xyz">karamablog.xyz</a>'
   const content = await markdownToHtml(post.body)
 
   return (post.data as any).image

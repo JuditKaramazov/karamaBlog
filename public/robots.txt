@@ -26,4 +26,4 @@ Disallow: /*/page/
 Disallow: /tags/
 Disallow: /api/
 
-Sitemap: https://karamablog.vercel.app/sitemap-index.xml
+Sitemap: https://karamablog.xyz/sitemap-index.xml

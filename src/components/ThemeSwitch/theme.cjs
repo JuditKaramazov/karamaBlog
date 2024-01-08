@@ -1,6 +1,6 @@
 const htmlEl = document.documentElement
 const themeToggle = document.querySelector('#toggle')
-const currentTheme = localStorage.getItem('@karamaBlog/theme')
+const currentTheme = localStorage.getItem('@karamablog/theme')
 
 function getPreferTheme() {
   if (currentTheme) return currentTheme
@@ -18,7 +18,7 @@ let themeValue = getPreferTheme()
 let themeColor = getThemeColor(themeValue)
 
 function setPreference() {
-  localStorage.setItem('@karamaBlog/theme', themeValue)
+  localStorage.setItem('@karamablog/theme', themeValue)
   reflectPreference()
 }
 

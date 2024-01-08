@@ -2,9 +2,9 @@
   "name": "karamablog",
   "author": "Judit Lázaro Moyano <j.lazaromoyano7@gmail.com>",
   "description": "Blog of { developer & tightrope walker } judit lázaro moyano",
-  "homepage": "https://karamazfolio.xyz",
+  "homepage": "https://karamablog.xyz",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "start": "npm run prebuild && astro dev --config '.config/astro.config.ts'",
     "build": "astro build --config '.config/astro.config.ts'",

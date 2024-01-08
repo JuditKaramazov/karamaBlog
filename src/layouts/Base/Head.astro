@@ -39,7 +39,6 @@ const schema: SchemaProps = {
   ...(date && { datePublished: date.toISOString().substring(0, 10) }),
   ...(updated && { dateModified: updated.toISOString().substring(0, 10) })
 }
-const typekitID = import.meta.env.PUBLIC_TYPEKIT_ID
 
 const appleTouchIcon = await getImage({
   src: faviconSrc,
@@ -52,7 +51,6 @@ const appleTouchIcon = await getImage({
 
 <head>
   <meta charset="utf-8" />
-
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -60,6 +58,8 @@ const appleTouchIcon = await getImage({
   <meta name="generator" content={Astro.generator} />
 
   <title>{titleFinal}</title>
+
+  <link rel="stylesheet" href={style} />
 
   <link rel="canonical" href={canonicalURL} />
   <meta name="description" content={descriptionFinal} />
@@ -87,23 +87,4 @@ const appleTouchIcon = await getImage({
   <SchemaOrg {...schema} />
 
   <link rel="sitemap" href="/sitemap-index.xml" />
-
-  {
-    typekitID && (
-      <>
-        <link
-          rel="preload"
-          as="style"
-          href={`https://use.typekit.net/${typekitID}.css`}
-        />
-        <link rel="preconnect" href="https://p.typekit.net" />
-        <link
-          rel="stylesheet"
-          href={`https://use.typekit.net/${typekitID}.css`}
-        />
-      </>
-    )
-  }
-
-  {style && <link rel="stylesheet" href={style} />}
 </head>

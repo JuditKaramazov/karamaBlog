@@ -6,6 +6,8 @@ image: ./doodles-teaser.jpg
 
 tags:
   - astro
+  - typescript
+  - react
   - blog
   - design
   - development
@@ -40,7 +42,7 @@ Journeys always start like this, I suppose.
 
 I do miss writing. I can't even do it properly in English, but I still miss the feeling of communicating a certain vibe, shade, or aspect of my personal and immutable way of seeing things. I miss the long nights writing poetry while getting ready for my exams, too. I miss enjoying things without constantly fearing this invisible threat that would hypothetically demolish my progress and the crystal castle I built around it. It could set fire to the very roots of my soul, couldn't it? Will there be something to miss about development at a certain point? How about combining everything and seeing what happens? Could it translate into a reconciliation between me, my old self, and the new one?
 
-"K", "R", "M". Although I previously gave special attention to not-so-indie video games while trying to build a virtual identity, this time I decided to delve into _Shadow of the Colossus_ instead of _The Last Guardian._ As **karamaBlog** serves as an extension of the brand used in my recent works, I wanted to maintain similar aesthetics, patterns, and a general vibe ensuring a cohesive and familiar user experience. At the same time, I also wanted to reproduce a sense of evolution beyond technical details and features. However, since this site aims to provide personal access to what's supposed to be a solitary path, it felt more accurate (and even honest) to represent it as a single individual wandering an immense landscape empty of everything, encountering impossible obstacles, and yet overcoming them not because of their ability but due to a deeper, almost dark purpose.
+"K", "R", "M". Although I previously gave special attention to not-so-indie video games while trying to build a virtual identity, this time I decided to delve into _Shadow of the Colossus_ instead of _The Last Guardian._ As **karamaBlog** serves as an extension of the brand used in my recent works, I wanted to maintain similar aesthetics, patterns, and a general vibe ensuring a cohesive and familiar user experience. At the same time, I also wanted to reproduce a sense of evolution beyond technical details and features. However, since this site aims at providing personal access to what's supposed to be a solitary path, it felt more accurate (and even honest) to represent it as a single individual wandering an immense landscape empty of everything, encountering impossible obstacles, and yet overcoming them not because of their ability but due to a deeper, almost dark purpose.
 
 For instance, the runes giving shape to the logo appear to be in Wander's sword. Is this place supposed to become my weapon, then? Could my words speak to someone else?
 
@@ -50,7 +52,7 @@ Anyway: we are here to discuss more than the evocative feelings that fill the sp
 
 1. **Framework & Language**
 
-   - **karamaBlog** is built as a statically exported site using Astro and TypeScript. The vast majority of components are either Astro components or native Web Components, with some React ones loaded client-side. Highly recommended.
+   - **karamaBlog** is built as a statically exported site using Astro and TypeScript. The vast majority of components are either Astro components or native Web Components, with some React ones loaded client-side. This combination offers the best of both worlds: the speed and efficiency of Astro for static site generation, the type safety and developer-friendly features of TypeScript, and the dynamic interactivity and reusable components provided by React. Highly recommended.
 
 2. **Styles**
 
@@ -59,21 +61,21 @@ Anyway: we are here to discuss more than the evocative feelings that fill the sp
 
 3. **Content management**
 
-   - The content itself resides under the "content/" directory, allowing Astro to create content collections for each subfolder. Given that each post is structured as a folder with a Markdown file and all associated assets co-located within, retrieving content collections enriches each post's frontmatter metadata, including extracting dates and slugs from the post folder names and performing exif extraction for photos.
+   - The content itself resides under the "content/" directory, allowing Astro to create content collections for each subfolder. Given that each post is structured as a folder with a Markdown file and all associated assets co-located within, retrieving content collections enriches each post's frontmatter metadata, including extracting dates and slugs from the post folder names and performing EXIF extraction for photos.
 
 4. **Search, Related Posts & Changelog Rendering**
 
-   - A global search is provided with fuse.js, which means that whenever the search is opened, all posts' metadata is fetched, and then queried against when the search field is used.
-   - Under each post, a list of related posts is magically displayed - or almost magically, at least (thanks again, fuse.js). This feature is based on tags and other metadata of the currently viewed posts... if any.
-   - I also considered it appropriate to show the content of a changelog, rendered from the Markdown file on GitHub from the given repository. This idea came as what I assumed would enhance releasing posts about projects hosted on GitHub.
+   - A global search is provided with [Fuse.js](https://github.com/krisk/Fuse) (a powerful, lightweight fuzzy-search library, with zero dependencies), which means that once the search has been opened, all posts' metadata is fetched and queried against as the search field is used.
+   - Under each post, a list of related posts is magically displayed - or almost magically, at least (thanks again, Fuse.js). This feature is based on tags and other metadata of the currently viewed posts... if any.
+   - I also considered it appropriate to display the changelog of my GitHub repositories thanks to the usage of the GitHub GraphQL API. This idea was conceived as a way to add transparency and keep my audience informed about the ongoing development and improvements in my projects.
 
 5. **Articles, Photos, Utils & /tecnoMazov**
 
    - Now, and as we are discussing business, allow me to share with you the meaning of this madness:
-     -- **Articles** hosts... articles. Sometimes interesting **links**, too.
-     -- Surprisingly, **Photos** showcases... different pictures that I took throughout my different trips. Original and unexpected, huh? Don't blame me for trying to make my personal blog _personal,_ guys.
-     -- **Utils** aims to provide you with interesting (and even downloadable) tools and utilities. Our world is expensive enough already, come on.
-     -- **/tecnoMazov** is where the magic happens: as tecno (or "disco") as it could be, this section showcases a continuously updated list of devices, tools, and services, as well as little extensions, scripts, or minimal apps that I myself built and then incorporated as my go-to options. As for the last part, and just in case you're interested in investigating all my projects so far, please, refer to my [portfolio](https://karamazfolio.xyz), and feel free to go "curious mode" over it.
+     - a. **Articles** hosts... articles. Sometimes interesting **links**, too.
+     - b. Surprisingly, **Photos** showcases... different pictures that I took throughout my different trips. Original and unexpected, huh? Don't blame me for trying to make my personal blog _personal,_ guys.
+     - c. **Utils** aims to provide you with interesting (and even downloadable) tools and utilities. Our world is expensive enough already, come on.
+     - d. **/tecnoMazov** is where the magic happens: as tecno (or "disco") as it could be, this section showcases a continuously updated list of devices, tools, and services, as well as little extensions, scripts, or minimal apps that I myself built and then incorporated as my go-to options. As for the last part, and just in case you're interested in investigating all my projects so far, please, refer to my [portfolio](https://karamazfolio.xyz), and feel free to go "curious mode" over it.
 
 ## Why do you pilot an EVA?
 

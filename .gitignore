@@ -3,8 +3,6 @@ node_modules
 .cache
 coverage
 .env
-.env.local
-.env*.local
 .env.development
 .nova
 

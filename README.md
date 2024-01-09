@@ -89,7 +89,14 @@ Finally:
 npm run dev
 ```
 
-In order to become the ultimate 🧑‍🚀 **Seasoned astronaut**...
+If you plan to clone this repository, take into account that you will have to create a `.env.local` file in the root directory of the project and add the following variables:
+
+```env
+GITHUB_TOKEN=your-github-token
+PUBLIC_MAPBOX_ACCESS_TOKEN=your-mapbox-token
+```
+
+Now, in order to become the ultimate 🧑‍🚀 **Seasoned astronaut**...
 
 ### Commands
 

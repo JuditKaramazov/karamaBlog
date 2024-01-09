@@ -32,37 +32,37 @@
 Table of Contents
 -----------------
 
-* [🚪 Introduction](#introduction)
-* [🔧 Getting Started](#getting-started)
-  * [🧞 Commands](#commands)
-  * [👀 Want to learn more?](#want-to-learn-more)
-* [🏗️ Structure](#structure)
-  * [📝 Articles](#articles)
-  * [🔗 Links](#links)
-  * [🖼️ Photos](#photos)
-  * [🧰 Utils](#utils)
-  * [👾 /tecnoMazov](#tecnomazov)
-* [🔮 Features](#features)
-  * [📅 Changelog](#changelog)
-  * [🌓 Day'n'Nite](#day'n'nite)
-  * [📷 EXIF metadata](#exif-metadata)
-  * [📡 JSON feed](#json-feed)
-  * [🔍 Search](#search)
-  * [🏷️ Tags & Related](#tags-&-related)
-* [🧪 Scripts](#scripts)
-  * [🌱 Add New](#add-new)
-  * [📦 Move Downloads](#move-downloads)
-  * [🎨 SVG as components](#svg-as-components)
-* [💄 Style](#style)
-* [🏛 License](#license)
+* [🚪 Introduction](#-introduction)
+* [🔧 Getting Started](#-getting-started)
+  * [🧞 Commands](#-commands)
+  * [👀 Want to learn more?](#-want-to-learn-more)
+* [🏗️ Structure](#-structure)
+  * [📝 Articles](#-articles)
+  * [🔗 Links](#-links)
+  * [🖼️ Photos](#-photos)
+  * [🧰 Utils](#-utils)
+  * [👾 /tecnoMazov](#-tecnomazov)
+* [🔮 Features](#-features)
+  * [📅 Changelog](#-changelog)
+  * [🌓 Day'n'Nite](#-daynnite)
+  * [📷 EXIF metadata](#-exif-metadata)
+  * [📡 JSON feed](#-json-feed)
+  * [🔍 Search](#-search)
+  * [🏷️ Tags & Related](#-tags--related)
+* [🧪 Scripts](#-scripts)
+  * [🌱 Add New](#-add-new)
+  * [📦 Move Downloads](#-move-downloads)
+  * [🎨 SVG as components](#-svg-as-components)
+* [💄 Style](#-style)
+* [🏛 License](#-icense)
 
-## Introduction
+## 🚪 Introduction
 
 There was a time when I wanted to be part of the university's maelstrom as a professor. That image is somehow blurry now that I can't even remember what literature tasted like or how its shapes looked to my eyes. There was a moment when I used to write, too - a distant one, just as many others. These days, the languages I speak the most are halfway through what humanities told me and what those devices that always fascinated me appeared to speak. Not a natural language, not an inherited one, and yet an efficient tool capable of translating our commands into a concise, clear, and precise syntax. What a surreptitious stream those opaque boxes, keys, and wires seemed to keep inside, just as if they contained an expansion of different universes away from our understanding.
 
 After all this time, there are moments when I still fantasize about the idea of making all these wishes converge into the same point. That's terrifying, somehow: how could we combine such antagonistic realities, constantly fighting and questioning each other? To that, I have no answer. I still have a voice, though, and several different tones and tongues converge into it.
 
-## Getting Started
+## 🔧 Getting Started
 
 This little creation that aims at providing me with the necessary tools to conciliate my many realities, also known as `karamaBlog`, is built as a statically exported site using Astro and TypeScript. Although the majority of components are either Astro components or native Web Components, there are some React ones loaded client-side, too. This combination offers the best of both worlds: the speed and efficiency of Astro for static site generation, the type safety and developer-friendly features of TypeScript, and the dynamic interactivity and reusable components provided by React. This synergy results in a performant, maintainable, and feature-rich web application, ensuring an optimal user experience that I know I will never achieve, but here we are, guys: still trying.
 
@@ -99,7 +99,7 @@ PUBLIC_MAPBOX_ACCESS_TOKEN=your-mapbox-token
 
 Now, in order to become the ultimate 🧑‍🚀 **Seasoned astronaut**...
 
-### Commands
+### 🧞 Commands
 
 ... Bear in mind that all commands are run from the root of the project, from a terminal:
 
@@ -112,12 +112,12 @@ Now, in order to become the ultimate 🧑‍🚀 **Seasoned astronaut**...
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-### Want to learn more?
+### 👀 Want to learn more?
 
 Feel free to check [Astro's documentation](https://docs.astro.build) or jump into their [Discord server](https://astro.build/chat). Enjoy the ride! 🚀
 
 
-## Structure
+## 🏗️ Structure
 
 According to their own documentation, inside of an Astro project we are expected to see the following folders and files:
 
@@ -151,7 +151,7 @@ Before doing so, please refer to the first site's entry, ["Doodles & other meltd
 
 Now, let's discuss business, though, as that is a story for another day - or night.
 
-### Articles
+### 📝 Articles
 
 The site's `menu` will welcome you with an _incredibly beautiful_ section called `Articles`, which happens to host... **articles**. I do understand this might be a difficult pill to swallow, but hear me out: all post content resides under [`./content/articles/`](./content/articles/), and every post is a folder with a Markdown file plus all the respective post assets co-located inside. Considering this, you'll find a `teaser image` introducing each article and other `illustrations` or `screenshots` graphically linked to the content itself, the main topic, or the specific feeling that certain things elicit from me. As for the rest... Markdown, guys. Nothing matters more than Markdown does (_as a philologist, I shamelessly accepted .md as the best narrative genre ever. Sorry not sorry_).
 
@@ -163,7 +163,7 @@ This is the very first layer: articles or posts themselves, followed by three di
 - **Contributing to the post**. Although my articles are eminently a way of expressing myself and exploring different topics, doubts, and trends, blogging is also a unique platform for deepening into this "warm residue of a community" notion that I so much value. I hope that giving you the possibility to contribute to my posts (by expressing your doubts, expanding the ideas, or providing me with inspiring documentation on the matter) may eventually lead to healthy opportunities for collaboration and growth.
 - **Fueling my soul with coffee**. What can I say? My Dinosaur drinks tons of it, guys - and none of us would want to see such a terrible creature going berserk mode, right?
 
-### Links
+### 🔗 Links
 
 Thanks to the lack of confidence that usually goes hand in hand with a severe impostor syndrome, I decided to incorporate a `Links` section closely related to the `Articles` one (in a similar way, you'll find more information in `./content/links`). In this case, however, my intention is sharing not-so-long exerpts that I happened to consider **brain food**, with only few personal thoughts on the matter. Whatever doesn't belong to my poor writing skills will peacefully live after some nice quotation marks.
 
@@ -173,7 +173,7 @@ _"How is it possible that such marks can look so sexy, Judit?"_ I am glad to hea
 
 - [`./src/styles/global.css`](./src/styles/global.css)
 
-### Photos
+### 🖼️ Photos
 
 If you were not bold enough to investigate the general menu, I bet you still found some pictures decorating the main page of `karamaBlog`, right? Although this matter will be properly addressed while discussing the several features and scripts included in the repository, I wanted to make this space as personal and honest as possible, especially since I tended to keep my personal life away from blogs and social media. Independently of this fact being quite an unaltered reality throughout the years, I considered it was time for me to express all my different edges without compromising my privacy way too much.
 
@@ -183,14 +183,14 @@ Don't forget that just as it happens with the articles and links, photos live un
 
 - [`./content/photos/`](./content/photos/)
 
-### Utils
+### 🧰 Utils
 
 As a part of `Articles`' content, utils was originally conceived as a `tag` differentiating the main posts from the ones that I used in order to **share interesting and downloadable tools**. After thoroughly analyzing the possibilities offered by a single tag, I came to the conclusion of incorporating it as a unique "section" displaying only the articles containing **goodies, utils, and nice tools** that you might find helpful in your development path.
 
 **TL;DR** - `Utils` is the modern `"it's dangerous to go alone! Take this."`
 
 
-### /tecnoMazov
+### 👾 /tecnoMazov
 
 Now, it's time to discuss the `most disco` section of them all: `/tecnoMazov`, which represents how it feels like to exist as someone who considers herself `Rompe-aire, el soldado del tecno`.
 
@@ -207,11 +207,11 @@ Inspired by [/uses](https://uses.tech), I would highly recommend having a look a
 
 - [`./content/articles/2023-12-28-tecnomazov/`](./content/articles/2023-12-28-tecnomazov/)
 
-## Features
+## 🔮 Features
 
 Well, well: now that we clarified the project's origin and main content, let's list the key features and functionalities allowing it to stand still.
 
-### Changelog
+### 📅 Changelog
 
 That's correct, guys: if you are reading this right after the initial release, it is highly possible that you won't manage to find any example of this specific functionality in `karamaBlog` yet, but that's only due to the more-than-understandable lack of content we're still facing during its embryonic stage.
 
@@ -228,7 +228,7 @@ changelog: JuditKaramazov/super-cool-repo
 
 and it will render the changelog at the end of it. Quite simple, am I right? In the end, this feature was conceived as a way to add transparency and keep my audience informed about the ongoing development and improvements taking place in my projects. Bringing some light to this Earth is easier than it seems, huh? And speaking of which...
 
-### Day'n'Nite
+### 🌓 Day'n'Nite
 
 ... Are your sunglasses ready? I hope they are! Just as it's mandatory these days, I incorporated a `theme switcher` to enhance the visual experience for readers. Including such a "must" nowadays into `karamaBlog` will hopefully allow you users/friends/readers/wanderers of the interwebz to personalize your viewing experience based on your likings, as it automatically switches between light and dark mode `based on your system preferences`.
 
@@ -236,7 +236,7 @@ For further information about this specific feature and its components, please, 
 
 - [`src/components/ThemeSwitch`](src/components/ThemeSwitch)
 
-### EXIF metadata
+### 📷 EXIF metadata
 
 First things first, let's clarify that an EXIF file is a form of data storage that provides specific information about photographs, like the camera settings, time, date, and location where a photo was taken. Given the fact that I do love taking pictures (even though I am _terrible_ at it), I found it _noice_ to make EXIF (as well as IPTC) metadata available for this blog. How does it work?
 
@@ -265,7 +265,7 @@ Feel free to check out the files and helpers related to this implementation:
 - `readOutExif()` as the helper for EXIF extraction in [`src/lib/exif/index.ts`](src/lib/exif/index.ts)
 - `loadAndFormatCollection()`, located in [`src/lib/astro/loadAndFormatCollection.ts`](src/lib/astro/loadAndFormatCollection.ts)
 
-### JSON feed
+### 📡 JSON feed
 
 The title here is descriptive enough: this feature generates a JSON feed upon build time, contributing to a more versatile and accessible data representation. After several blogging moments throughout my life, I realized that including a JSON feed in a blog offers several advantages that ensure a better user experience, increased visibility, and improved connectivity within the digital ecosystem. _Let's hope it wasn't a mistake..._
 
@@ -274,7 +274,7 @@ Until we get to know if it was indeed a mistake or not, here's the file that wil
 - [`./src/pages/feed.json.ts`](./src/pages/feed.json.ts)
 - [`./src/lib/feed/`](./src/lib/feed/)
 
-### Search
+### 🔍 Search
 
 Speaking about curiosity, how many times did you try to find something specific in a website with no search tools? Tons of times, right? Did you feel like praying to all deities, too? Did you wish that the website was kind to you? That is what usually happens to me even up to these days, and it is also the reason that _forced me_ to include a `global search` empowered by [Fuse.js](https://github.com/krisk/Fuse), a lightweight fuzzy-search library, with zero dependencies. 
 
@@ -287,7 +287,7 @@ In `karamaBlog`'s specific case, once the search has been opened, all posts' met
 
 - [`src/features/Search/`](src/features/Search/)
 
-### Tags & Related
+### 🏷️ Tags & Related
 
 Ah, _beautiful labels trying to define who we are..._ Luckily, the labels and tags we're using in this blog are nothing more than a mere orientation allowing us to quickly check the main topics to discuss, as they aim to facilitate the organization and access to some 🕸`related posts`🕸.  As for the last of them, the `Related Posts` feature is integrated into individual article pages, highlighting content similarities and facilitating a more immersive reading experience.
 
@@ -304,13 +304,13 @@ Don't forget to investigate the following directory in order to get a better und
 
 - [`src/components/RelatedPosts/`](src/components/RelatedPosts/)
 
-## Scripts
+## 🧪 Scripts
 
 Now, let's see some other content helpers and scripts that might be as relevant for you as they were (and are) for me.
 
 ![Alt text](/public/screenshots/karamablog-05.png)
 
-### Add New
+### 🌱 Add New
 
 The `new` script provides a streamlined way to add new articles or photo posts to the blog, as it automates the process of setting up the necessary files and metadata for a new post. What's great about it is that the script can be run with different commands to create either a new article or a new photo post. As for each of them:
 
@@ -342,7 +342,7 @@ Can't wait to get a better idea of how this works? I've got you covered:
 
 - [`./scripts/new/`](./scripts/new/)
 
-### Move Downloads
+### 📦 Move Downloads
 
 The `move-download.ts` script is a utility designed to simplify the management of downloadable ZIP files associated with articles in our blog, as it automates the process of finding all ZIP files within article folders and copying them to a designated public directory. As strange as it may sound, this script streamlines the process of managing downloadable content associated with our articles, ensuring a clean and organized structure in the public directory - finally! Organization!
 
@@ -366,7 +366,7 @@ For more information:
 
 - [`./scripts/move-downloads.ts`](./scripts/move-downloads.ts)
 
-### SVG as components
+### 🎨 SVG as components
 
 In this approach, all SVG assets located under the [`./src/images/`](./src/images/) directory, as well as those from specific iconset dependencies, undergo a `transformation into Astro & React components` during the site-building process, pretty much like them Transformers of the development Spiderverse. The resulting compiled components are then neatly organized under [`./src/images/components/`](./src/images/components/), with each component containing a cleaned version of the original SVG represented as inline HTML. 
 
@@ -388,7 +388,7 @@ In order to see this in action, don't hesitate to refer to:
 
 - [`./scripts/create-icons/`](./scripts/create-icons/)
 
-## Style
+## 💄 Style
 
 We're finally here, guys: the style. What a concept, right? Now that the technical part is partially defined, I would find it criminal to finish this text without highlighting the incredible logos, coffees (_ahem..._), and teaser images `Auregan Nedelec` provided me with, which greatly improved the overall look of the blog and made my cold little heart as warm as a baked potato. Above all, this sense of collaboration is what truly prevails, though - and for that I am genuinely grateful.
 
@@ -402,7 +402,7 @@ I partially disagree, though, as there are ways to destroy a world and still int
 
 If most of my passions can coexist in these spaces, and more specifically in this blog you're about to discover, I bet the many versions of myself will find their way toward reconciliation, too.
 
-## License
+## 🏛 License
 
 The code is available under the [MIT License](/LICENSE.txt). Keep it _noice_ now that the festivities finally came to an end, guys. Oh, and remember that you can make this 2024 Dinosaur extremely happy if you...
 <br />

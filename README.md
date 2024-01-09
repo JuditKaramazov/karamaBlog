@@ -14,6 +14,7 @@
   <img src="https://img.shields.io/badge/CSS-CSS3-1572B6?logo=css3" alt="CSS" title="CSS" />
   <img src="https://img.shields.io/badge/YAML-2C8EBB?logo=yaml" alt="YAML" title="YAML" />
   <br />
+  <img src="https://github.com/JuditKaramazov/karamaBlog/actions/workflows/ci.yml/badge.svg" alt="CI Status" title="CI" />
 </div>
 <br />
 <p align="center">

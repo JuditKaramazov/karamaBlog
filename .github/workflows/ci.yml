@@ -1,0 +1,86 @@
+name: 'CI Pipeline'
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '**'
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PUBLIC_MAPBOX_ACCESS_TOKEN: ${{ secrets.GATSBY_MAPBOX_ACCESS_TOKEN }}
+
+jobs:
+  lint:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-13]
+        node: ['18']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint
+
+  typecheck:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-13]
+        node: ['18']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run prebuild
+      - run: npm run typecheck
+
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-13]
+        node: ['18']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+      - name: Cache Astro build output
+        uses: actions/cache@v3
+        with:
+          path: ${{ github.workspace }}/.astro
+          key: ${{ matrix.os }}-${{ matrix.node }}-astro-build-${{ hashFiles('content/**/*.jpg', 'content/**/*.png') }}
+          restore-keys: ${{ matrix.os }}-${{ matrix.node }}-astro-build-
+      - run: npm ci
+      - run: NODE_OPTIONS="--max-old-space-size=4096" npm run build
+      - name: Zip artifact for deployment
+        if: github.ref == 'refs/heads/main' && matrix.os == 'ubuntu-latest' && matrix.node == '18'
+        run: zip dist.zip ./dist -r
+      - uses: actions/upload-artifact@v3
+        if: github.ref == 'refs/heads/main' && matrix.os == 'ubuntu-latest' && matrix.node == '18'
+        with:
+          name: dist-${{ matrix.os }}-${{ matrix.node }}
+          path: dist.zip
+
+  coverage:
+    runs-on: ubuntu-latest
+    if: ${{ success() && github.actor != 'dependabot[bot]' }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: coverage-ubuntu-latest-18

@@ -62,7 +62,7 @@ export default function Search(): ReactElement {
         <Input
           className={styles.searchInput}
           type="search"
-          placeholder="Search everything"
+          placeholder="Search for literally everything you think of"
           autoFocus
           value={query}
           onChange={(e) => setQuery(e.target.value)}

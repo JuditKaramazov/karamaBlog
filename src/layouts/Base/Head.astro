@@ -51,7 +51,8 @@ const appleTouchIcon = await getImage({
 
 <head>
   <script is:inline>
-    const theme = localStorage.getItem('@karamablog/theme') || 'light'
+    const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    const theme = localStorage.getItem('@karamablog/theme') || preferredTheme
     document.documentElement.dataset.theme = theme
   </script>
   <meta charset="utf-8" />

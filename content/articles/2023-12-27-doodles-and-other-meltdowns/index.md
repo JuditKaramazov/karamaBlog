@@ -2,7 +2,7 @@
 date: 2023-12-27T10:18:50.153Z
 
 title: Doodles & other meltdowns
-image: ./doodles-teaser.jpg
+image: ./doodles-teaser.png
 
 tags:
   - astro

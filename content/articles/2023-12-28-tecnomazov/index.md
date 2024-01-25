@@ -31,6 +31,9 @@ My so-called-office is a fleeting one, and that's why I wouldn't survive without
 - **[MacBook Pro (M3 Pro, 14-inch, 2023)](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-space-black-apple-m3-pro-with-11-core-cpu-and-14-core-gpu-18gb-memory-512gb)**  
   _Space Black, Apple M3 Pro chip with 11‑core CPU, 14‑core GPU, 16‑core Neural Engine, 18GB unified memory, 512GB SSD storage. A beast._
 
+- ~~**[MacBook Air (Retina, 13-inch, 2019)](https://support.apple.com/kb/SP798?locale=en_GB)**~~  
+  _Space Gray, 1.6GHz dual-core Intel Core i5, Turbo Boost up to 3.6GHz, with 4MB L3 cache, 8GB RAM, 1TB SSD. Officially deprecated, but I wouldn't be here if it wasn't for this little thing. In case you are wondering: it is indeed possible to initiate your programming journey with an Air, no matter if the circumstances will eventually force you to find more appropriate tools._
+
 - **[iPhone 11 (Black, 128GB)](https://www.apple.com/by/iphone-11/specs)**  
   _My worst mistake, all thanks to the incredible years that my old iPhone 4 gave me. It's still allowing me to embrace my "digital animal" nature, but I must admit that I've never been proud of the decision I made with this one._
 
@@ -64,7 +67,7 @@ Additionally, most of these little guys never leave my desk:
 
 ![The very guts of this mess.](./tecnoMazov-software.png)
 
-There's no surprise: [macOS](https://www.apple.com/macos/) and [iOS](https://www.apple.com/ios/) are all around even though I still rely on [Microsoft](https://www.microsoft.com/en-us/windows?r=1)'s flexibility, which is something that I miss more than I should - ~~especially since my MacBook, as great as it is, can't handle the most basic video games and applications without the ventilation system warning me about future explosions~~ then, I think of my splendid MacBook Pro, and it washes all my pain away. The majority of my work, however, is done on macOS.
+There's no surprise: [macOS](https://www.apple.com/macos/) and [iOS](https://www.apple.com/ios/) are all around even though I still rely on [Microsoft](https://www.microsoft.com/en-us/windows?r=1)'s flexibility, which is something that I miss more than I should - ~~especially since my MacBook Air, as great as it is, can't handle the most basic video games and applications without the ventilation system warning me about future explosions~~ then, I think of my (new and) splendid MacBook Pro, and it washes all my pain away. The majority of my work, however, is done on macOS.
 
 As for the rest, there is no need for complicated things: default Apple apps across devices here and there (including **Mail**, **Calendar**, **Notes** and **Photos**), some **Spotify**, a bit of **Steam**, and boom: magic. Quite a cloud-first life, huh? As practical things are more than required these days, I'm starting to store all my files in some cloud service and selectively sync them to any device.
 

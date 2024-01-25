@@ -1,6 +1,6 @@
 ---
 date: 2023-12-28T23:44:15Z
-updated: 2023-12-30T00:25:12+00:00
+updated: 2024-01-25T20:01:12+00:00
 
 title: /tecnoMazov
 image: ./tecnoMazov-teaser.png
@@ -28,8 +28,8 @@ A precarious and probably-not-so-interesting list of devices, tools, and service
 
 My so-called-office is a fleeting one, and that's why I wouldn't survive without:
 
-- **[MacBook Air (Retina, 13-inch, 2019)](https://support.apple.com/kb/SP798?locale=en_GB)**  
-  _Space Gray, 1.6GHz dual-core Intel Core i5, Turbo Boost up to 3.6GHz, with 4MB L3 cache, 8GB RAM, 1TB SSD._
+- **[MacBook Pro (M3 Pro, 14-inch, 2023)](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-space-black-apple-m3-pro-with-11-core-cpu-and-14-core-gpu-18gb-memory-512gb)**  
+  _Space Black, Apple M3 Pro chip with 11‑core CPU, 14‑core GPU, 16‑core Neural Engine, 18GB unified memory, 512GB SSD storage. A beast._
 
 - **[iPhone 11 (Black, 128GB)](https://www.apple.com/by/iphone-11/specs)**  
   _My worst mistake, all thanks to the incredible years that my old iPhone 4 gave me. It's still allowing me to embrace my "digital animal" nature, but I must admit that I've never been proud of the decision I made with this one._
@@ -64,7 +64,7 @@ Additionally, most of these little guys never leave my desk:
 
 ![The very guts of this mess.](./tecnoMazov-software.png)
 
-There's no surprise: [macOS](https://www.apple.com/macos/) and [iOS](https://www.apple.com/ios/) are all around even though I still rely on [Microsoft](https://www.microsoft.com/en-us/windows?r=1)'s flexibility, which is something that I miss more than I should - especially since my MacBook, as great as it is, can't handle the most basic video games and applications without the ventilation system warning me about future explosions. The majority of my work, however, is done on macOS.
+There's no surprise: [macOS](https://www.apple.com/macos/) and [iOS](https://www.apple.com/ios/) are all around even though I still rely on [Microsoft](https://www.microsoft.com/en-us/windows?r=1)'s flexibility, which is something that I miss more than I should - ~~especially since my MacBook, as great as it is, can't handle the most basic video games and applications without the ventilation system warning me about future explosions~~ then, I think of my splendid MacBook Pro, and it washes all my pain away. The majority of my work, however, is done on macOS.
 
 As for the rest, there is no need for complicated things: default Apple apps across devices here and there (including **Mail**, **Calendar**, **Notes** and **Photos**), some **Spotify**, a bit of **Steam**, and boom: magic. Quite a cloud-first life, huh? As practical things are more than required these days, I'm starting to store all my files in some cloud service and selectively sync them to any device.
 
@@ -197,6 +197,8 @@ As for the rest, there is no need for complicated things: default Apple apps acr
     A short story about what sort of challenges everyday little things can be. Help the girl buy milk, be the first not to disappoint her.
   - **[SOMA](https://store.steampowered.com/app/282140/SOMA)**  
     From the creators of Amnesia: The Dark Descent comes SOMA, a sci-fi horror game set below the waves of the Atlantic ocean. Struggle to survive a hostile world that will make you question your very existence.
+  - **[Chants of Sennaar](https://store.steampowered.com/app/1931770/Chants_of_Sennaar)**  
+    Legend says that one day, a traveler will reunite the Peoples of the Tower who are unable to communicate with each other. Observe, listen, and decipher ancient languages in a fascinating universe inspired by the myth of Babel.
 
 ### Messaging
 

@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.title span {
+  display: none;
+}
+
 .logo {
   width: 100%;
   height: 35px;

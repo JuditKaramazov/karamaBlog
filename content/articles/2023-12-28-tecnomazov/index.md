@@ -1,6 +1,6 @@
 ---
 date: 2023-12-28T23:44:15Z
-updated: 2024-01-25T20:01:12+00:00
+updated: 2024-02-05T20:43:12+00:00
 
 title: /tecnoMazov
 image: ./tecnoMazov-teaser.png
@@ -110,7 +110,7 @@ As for the rest, there is no need for complicated things: default Apple apps acr
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
-- **EVASCode & [Nord](https://www.nordtheme.com)**  
+- **[EVASCode](https://marketplace.visualstudio.com/items?itemName=tecnomazov.evas-code) & [Nord](https://www.nordtheme.com)**  
   My go-to syntax color themes for everything displaying code. As for EVAS (mostly EVA-00 for the dark theme when I'm not using Nord, and The End Of Development for the shiny moments of light and peace), I created that pile of VS Code themes myself, and no matter if it's far from being the best creation ever (spoiler: it is not), it still fits my likings and preferences pretty much better than most of the themes out there.
 
 - **Terminal.app**  
@@ -216,7 +216,10 @@ As for the rest, there is no need for complicated things: default Apple apps acr
 
 ### Writing
 
-Except within Notes.app or my personal notebooks, everything I write these days is composed as [GitHub Flavored Markdown](https://github.github.com/gfm). Quite a plot twist, if you ask me.
+Except within ~~Notes.app~~ iA Writer or my personal notebooks, everything I write these days is composed as [GitHub Flavored Markdown](https://github.github.com/gfm). Quite a plot twist, if you ask me.
+
+- **[iA Writer](https://ia.net/writer)**  
+  Listen carefully: this is the most beautiful thing that ever happened to me. If you are wondering why, I invite you to have a look at its website, give the free trial a try _(I didn't intend it, I swear)_, and then embrace your new life as a “stay-focused maniac". You won’t find a place in the world making the writing process as enjoyable as this app.
 
 - **[VS Code](https://code.visualstudio.com)**  
   Most development-related writing ends up in VS Code. Is that good, is that bad...?

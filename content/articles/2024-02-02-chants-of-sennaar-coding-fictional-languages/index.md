@@ -1,5 +1,5 @@
 ---
-date: 2024-01-29T18:48:50.153Z
+date: 2024-02-02T18:48:50.153Z
 
 title: Chants of Sennaar, coding fictional languages
 image: ./chants-sennaar-teaser.png

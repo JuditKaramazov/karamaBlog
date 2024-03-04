@@ -1,7 +1,7 @@
 ---
 date: 2023-12-30T14:25:16.581Z
 
-title: Soulless Software & How to  Create Soul
+title: Soulless Software & How to Create Soul
 linkurl: https://garden.bradwoods.io/notes/design/juice
 
 tags:

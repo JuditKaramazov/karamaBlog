@@ -16,6 +16,7 @@ tags:
   - indie games
   - mental health
   - the last of us
+  - video games
   - working conditions
 
 toc: true

@@ -20,7 +20,7 @@ toc: true
 
 These days, becoming better turned out to be a blurry concept - now, it's all about being inhumanly, incoherently, and impossibly efficient. The idea of "performance management" or the questions surrounding _why keeping score is so important_ mean nothing, as our industry, similarly to the video games one, is obviously hit-driven: all that matters is an application, tool, or game blowing up, but no one tells you all the things you'll lose while walking through that valley.
 
-In this context, these thoughts made me work on a **tool I could privately use to improve my productivity** - because nothing is enough. That's how [mergeOS](https://github.com/JuditKaramazov/mergeOS), a **MacBook shortcut allowing users to easily preview, manage, and access their development responsibilities (or pull requests)**, was born.
+In this context, such thoughts made me work on a **tool I could privately use to improve my productivity** - because nothing is enough. That's how [mergeOS](https://github.com/JuditKaramazov/mergeOS), a **MacBook shortcut allowing users to easily preview, manage, and access their development responsibilities (or pull requests)**, was born.
 
 Needless to say, **accessibility** has always been one of my main goals, no matter if I was developing something for others or my own pleasure and entertainment. Considering this, I tried to simplify all the functionalities and authentication steps as much as possible for mergeOS, which resulted in the following requirements:
 
@@ -70,7 +70,7 @@ After it, you'll be ready to play with this little application locally; feel fre
 
 ## Check out & contribute
 
-Head over to GitHub for more information, and feel free to take a peek into the code. If you [find any bugs](https://github.com/JuditKaramazov/mergeOS/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C%F0%9F%90%9B+bug&projects=&template=bug_report.yml&title=Bug%3A+) or [further improvements](https://github.com/JuditKaramazov/mergeOS/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C%F0%9F%92%A1+feature&projects=&template=feature_request.yml&title=Feature%3A+), remember to report it just so that I can keep these themes as functional and balanced as possible.
+Head over to GitHub for more information, and feel free to take a peek into the code. If you [find any bugs](https://github.com/JuditKaramazov/mergeOS/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C%F0%9F%90%9B+bug&projects=&template=bug_report.yml&title=Bug%3A+) or [further improvements](https://github.com/JuditKaramazov/mergeOS/issues/new?assignees=&labels=%F0%9F%91%80+needs+triage%2C%F0%9F%92%A1+feature&projects=&template=feature_request.yml&title=Feature%3A+), remember to report it just so that I can keep this app as functional and balanced as possible.
 
 <p class="content-download">
     <a class="icon-github btn btn-primary" href="https://github.com/JuditKaramazov/mergeOS">GitHub</a>

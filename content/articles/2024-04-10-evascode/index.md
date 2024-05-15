@@ -39,7 +39,7 @@ Once downloaded, you'll find that the package contains the following themes:
 ## Features
 
 - easy installation
-  - (both available in GitHub and the Marketplace)
+  - (both available in [GitHub](https://github.com/JuditKaramazov/TCA-EVASCode) and the [Marketplace](https://marketplace.visualstudio.com/items?itemName=tecnomazov.evas-code))
 - clarity and coherence
   - (these themes take into account different syntax and various color depths, just as it happens with JSON files)
 - carefully crafted

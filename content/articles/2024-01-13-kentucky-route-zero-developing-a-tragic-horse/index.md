@@ -7,7 +7,9 @@ image: ./kentucky-horses-teaser.png
 tags:
   - analysis
   - development
-  - indie
+  - game design
+  - game development
+  - indie games
   - kentucky route zero
   - video games
 ---

@@ -9,7 +9,8 @@ tags:
   - analysis
   - castlevania
   - dark souls
-  - development
+  - game design
+  - game development
   - level design
   - metroid
   - metroidvania

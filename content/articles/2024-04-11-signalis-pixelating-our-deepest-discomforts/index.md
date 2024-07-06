@@ -15,6 +15,7 @@ tags:
   - signalis
   - silent hill
   - survival horror
+  - video games
 
 toc: true
 ---

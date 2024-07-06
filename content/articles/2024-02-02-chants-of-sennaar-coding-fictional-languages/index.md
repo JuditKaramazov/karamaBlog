@@ -11,6 +11,7 @@ tags:
   - duolingo
   - game development
   - game design
+  - indie games
   - heavens vault
   - linguistics
   - nier replicant

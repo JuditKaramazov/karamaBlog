@@ -2,7 +2,7 @@
   <img src="/public/logo.png" width="300" alt="karamaBlog original logo.">
 </p>
 <h1 align="center">
-  karamaBlog, v1.0.0
+  karamaBlog
 </h1>
 
 <div align="center">
